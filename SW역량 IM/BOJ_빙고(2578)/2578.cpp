@@ -1,8 +1,9 @@
 /*
-
-
+    1. 2차원 벡터로 빙고 저장
+    2. 숫자 불릴 때마다 해당 칸 -1로 표시
+    3. 열 5개, 행 5개, 대각선 2개 빙고인지 확인
+    4. 3줄 이상 빙고면 종료
 */
-
 #include<iostream>
 #include<vector>
 
@@ -50,7 +51,7 @@ bool cntBinggos(void){
     if(binggo[0][4] == binggo[1][3] && binggo[1][3] == binggo[2][2] &&
     binggo[2][2] == binggo[3][1] && binggo[3][1] == binggo[4][0])
         cnt++;
-        
+
     if(cnt>=3){
         return true;
     }
